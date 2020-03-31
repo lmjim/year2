@@ -1,0 +1,45 @@
+
+LIKELY SOLUTIONS TO inMed.txt
+- the first has a long word bias, the second short
+- unrelated to being iterative/memoized
+- other acceptable solutions possible
+
+
+
+phrase number: 1
+theraininspain
+
+the rain ins pain 
+
+the rain in spa in
+
+
+phrase number: 2
+throughthreecheesetreesthreefreefleasflewwhilethesefleasflewfreezebreezeblewfreezebreezemadethesethreetreesfreezefreezetreesmadethesetreescheesefreezethatiswhatmadethesethreefreefleassneeze
+
+
+through three cheese trees three free fleas flew while these fleas flew freeze breeze blew freeze breeze made these three trees freeze freeze trees made these trees cheese freeze that is what made these three free fleas sneeze 
+
+through three cheese trees three free fleas flew while these fleas flew freeze breeze blew freeze breeze made these three trees freeze freeze trees made these trees cheese freeze that is what made these three free fleas sneeze 
+
+
+phrase number: 3
+andhereisanewtrickmisterknocksknocksonclocksonbricksandblocksbricksandblocksonknocksonbox
+
+and here is anew trick mister knocks knocks on clocks on bricks and blocks bricks and blocks on knocks on box 
+
+and he re is a new trick mister knocks knock son clock son brick sand blocks brick sand block son knock son box 
+
+
+phrase number: 4
+andhereisanewtrickmistocksknocksonclocksonbricksandblocksbricksandblocksonknocksonbox
+
+none
+
+
+phrase number: 5
+ohioohohioohhohoohioohhohoohiohohio
+
+ohio oh ohio oh ho ho ohio oh ho ho oh i oh ohio 
+
+oh i ooh oh i ooh ho ho oh i ooh ho ho oh i oh ohio 

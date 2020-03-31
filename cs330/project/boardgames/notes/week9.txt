@@ -1,0 +1,15 @@
+Chase created the graphics for the Aggravation board. At the
+	time of writing this, he is trying to implement the Sorry board
+	graphics, however (as of the most recent update) there have been 
+	some issues encountered with ncurses acting "weird". Should have 
+	a working version up in time for the presentations.
+
+Lily finished the game logic and got Aggravation implemented. 
+	She ran into some issues with how the input file
+	was original written and made updates to that. She
+	made sure that there is still a function to
+	implement Sorry in the future though.
+
+The plan for next week is to possibly finish off Sorry and
+	then turn our games into a game library. We also
+	will need to make our presentation.

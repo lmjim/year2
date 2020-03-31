@@ -1,0 +1,4 @@
+anagram.c compiles and links with test.o without warnings or errors. Runs properly even on A-Z.dict.
+main.c compiles and links without warnings or errors. Runs properly even on A-Z.dict.
+In both cases A-Z takes about 7 minutes to run on my machine (without valgrind).
+Valgrind reported no memory leaks on A-B-C, but took too long to run on the full A-Z.

@@ -1,0 +1,21 @@
+Lily spent a lot of time reviewing and altering Chase's code. Chase originally thought that the 
+	non-windowed ncurses funtions were compatible with his windowed functions. As Lily started to 
+	make the game checkers, she learned that this was not true. She went through all of the input 
+	files to change them to use a window. Lily also updated the input files to make function 
+	calls to the differnt games' move valididty checker. Lily also wrote a main file to be used 
+	by all of the games. Lily also wrote a Makefile to compile the various executables. 
+
+Chase added a swap and move function for the board. He also added the index numbers along the side of 
+	the board to be user friendly. Chase also pointed out that the input functions would need to 
+	be passed a pointer to the board.He also prompted Lily to implement the calls to check for 
+	validity. 
+
+Chase had a lot of issues with git this week, and Lily got frustrated with the code Chase pushed last week. 
+
+The plan for next week is to finish implementing chess and checker to the best of our abilities.  
+
+Feb. 24, 2019:
+Chase finished chess, however there is apparently a problem when running it on ix-dev, as the board does not render
+	even remotely correct, however on local environments is appears to work. Will ask Boyanna if this is a problem
+	on our end or if it is on ix-dev. None-the-less, chess is implemented with 2 players, including all standard
+	moves including en passant and castling.

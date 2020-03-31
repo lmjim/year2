@@ -1,0 +1,42 @@
+Name: Lily Jim
+DuckID: ljim
+Assignment: CIS 415 Project 1
+
+Part 1 works successfully without warnings and no memory errors.
+Part 2 works successfully without warnings and no memory errors.
+	MCP sleeps for a second before sending SIGUSR1.
+	MCP sleeps for two seconds before sending SIGSTOP.
+	MCP sleeps for another two seconds before sending SIGCONT.
+	MCP prints notifications of starting, pausing, resuming, and finished.
+Part 3 works successfully without warnings and no memory errors.
+	MCP prints the pid of the program when it first starts.
+	MCP prints the pid of the program when it fully finishes.
+	MCP prints the pid of the program running when SIGALRM is called.
+	MCP has two commented out lines inside sig_alrm that will print
+		the pid of the program when it is paused and resumed.
+Part 4 works successfully without warnings and no memory errors.
+	MCP prints information about the program running when the alarm is signaled
+	and information about the program that is about to start.
+	If it is the same program getting started up again (i.e. there is only one
+	program still running) it will just say continuing same program.
+	The information printed is:
+		the PID and the command and any additional arguments
+		the state the process is in (Not Started, Running, Paused, Exited)
+		the time elapsed since starting the process in seconds (uptime - starttime)
+		the total virtual memory used in bytes
+		the user time and system time both in clock ticks
+Part 5 works successfully without warnings and no memory erros.
+	MCP determines if a process' user time is 10 times greater than its system time
+	(or if the system time is 0). 
+	For those processes, MCP lets them run for 100 milliseconds.
+	Otherwise, MCP has the process run for 50 milliseconds.
+	The idea being that io-bound processes get scheduled for less time and
+	cpu-bound processes get scheduled for more time. 
+	However, if the program is small enough/has not run for long enough yet, 
+	this MCP will default to treating it like a cpu-bound process.
+
+To compile, run, and clean use < make run > 
+	or you can < make all > to compile, do testing, then < make clean >. 
+	fullTest.sh runs goodTest, badTest, and valTest on all parts 
+	then tests part 4 and 5 with the iobound and cpubound files. 
+

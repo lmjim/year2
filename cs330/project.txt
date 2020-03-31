@@ -1,0 +1,10 @@
+** Project name: Board Games
+** Project repository: bitbucket.org/ljim2021/boardgames
+** Team name: Game Masters
+** Team members: Chase Craig, Lily Jim
+** Description (1-3 paragraphs):
+	We will create a library with games. Most games will be board games like Chess, Checkers, Backgammon, Othello, Sorry, Aggravation, Chutes and Ladders, and Candy Land. Some other game ideas at this point are Towers of Hanoi, Tic Tac Toe, and Connect 4. 
+** Implementation approach:
+	The games will be played on the command line with mostly ASCII design. We will learn ncurses so the games are played in place. The games will share certain files like a rudimentary game engine. Each of us will tackle individual games, but we will work together to insure validation and verification. We will also work together on the files shared between games. 
+** Risk management plan (max 1 paragraph):
+	If someone is overwhelmed by other homework, we can do quick checkins at the end of every class; otherwise, checkins will happen on Tuesdays/Thursdays when we are both free most of the day. If someone doesn't complete what they say they will, it should not affect the other person significantly since we're mainly working on separate games. We will also be realistic in what we can accomplish in the following week during our checkins. 

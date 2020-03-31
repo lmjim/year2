@@ -1,0 +1,6 @@
+ljim/Makefile
+ljim/anagram.h
+ljim/anagram.c
+ljim/main.c
+ljim/test.o
+ljim/report.txt

@@ -1,0 +1,30 @@
+
+LIKELY SOLUTIONS TO inLit.txt
+- the first has a long word bias, the second short
+- unrelated to being iterative/memoized
+- other acceptable solutions possible
+
+
+phrase number: 1
+theywererunningontheplainharryingtheantelopeandtheantelopemovedlikephantomsinthesnowandcircledandwheeledandthedrypowderblewabouttheminthecoldmoonlightandtheirbreathsmokedpalelyinthecoldasiftheyburnedwithsomeinnerfireandthewolvestwistedandturnedandleaptinasilencesuchthattheyseemedofanotherworldentire
+
+they were running on the plain harrying the antelope and the antelope moved like phantoms in the snow and circled and wheeled and the dry powder blew about them in the cold moonlight and their breath smoked palely in the cold as if they burned with some inner fire and the wolves twisted and turned and leapt in a silence such that they seemed of another world entire 
+
+they we re running on the plain harrying the ant elope and the ant elope moved like phantom sin the snow and circled and whee led and the dry powder blew a bout the mint he cold moon light and their breath smoked palely in the cold a sift hey burned with so me inner fire and the wolves twisted and turned and leap tin a silence such that they see me do fan other world entire 
+
+
+phrase number: 2
+onanexceptionallyhoteveningearlyinjulyayoungmancameoutofthegarretinwhichhelodgedintheplaceandwalkedslowlyasthoughinhesitationtowardsthebridgehehadsuccessfullyavoidedmeetinghislandladyonthestaircasehisgarretwasundertheroofofahighfivestoreyhouseandwasmorelikeacupboardthanaroomthelandladywhoprovidedhimwithgarretdinnersandattendancelivedonthefloorbelowandeverytimehewentouthewasobligedtopassherkitchenthedoorofwhichinvariablystoodopenandeachtimehepassedtheyoungmanhadasickfrightenedfeelingwhichmadehimscowlandfeelashamedhewashopelesslyindebttohislandladyandwasafraidofmeetingher
+
+
+on an exceptionally hot evening early in july a young man came out oft he garret in which he lodged in the place and walked slowly as though in hesitation towards the bridge he had successfully avoided meeting his landlady on the staircase his garret was under the roof of a high five storey house and was more like a cupboard than a room the landlady who provided him with garret dinners and attendance lived on the floor below and every time he went out hew as obliged top ass her kitchen the door of which invariably stood open and each time he passed the young man had a sick frightened feeling which made him scowl and feel ashamed hew as hopelessly in debt to his landlady and was afraid of meeting her 
+
+on an except i on ally hot evening early in july a young man came out of the garret in which he lodge din the place and walked slowly as though in he sit at i on to wards the bridge he had success fully a voided meeting his land lad yon the stair case his garret was under the roof of a high five storey ho use and was more like a cup board than a room the land lady who provided him with garret dinner sand at ten dance live don the floor be low and every time he went out he was obliged to pass her kitchen the do or of which in variably stood open and each time he passed the young man had a sick frightened feeling which mad eh i ms cow land feel a shamed he was hopelessly in debt to his land lady and was afraid of meeting her 
+
+
+phrase number: 3
+firstiwilltellabouttherobberyourparentscommittedthenaboutthemurderswhichhappenedlatertherobberyisthemoreimportantpartsinceitservedtosetmyandmysisterslivesonthecoursestheyeventuallyfollowednothingwouldmakecompletesensewithoutthatbeingtoldfirstourparentsweretheleastlikelytwopeopleintheworldtorobabanktheywerenotstrangepeoplenotobviouslycriminalsnoonewouldhavethoughttheyweredestinedtoendupthewaytheydidtheywerejustregularalthoughofcoursethatkindofthinkingbecamenullandvoidthemomenttheydidrobabank
+
+first i will tell about the robbery our parents committed then about the murders which happened later the robbery is them ore important part since it served to set my and my sisters lives on the courses they eventually followed nothing would make complete sense without that being told first our parents were the least likely two people in the world to rob a bank they were not strange people not obviously criminals no one would have thought they were destined to end up the way they did they were just regular although of course that kind of thinking became null and void the moment they did rob a bank 
+
+first i will tell a bout the robber your pa rents commit ted the nab out the murders which happened later the robbery is the more im port ant part since it served to set my and my sisters live son the courses they eventually followed no thing would make complete sense with out that being told firs tour pa rents we re the least likely two people in the world to rob a bank they we re not strange people not obviously criminals no one would have thought they we re destined to end up the way they did they we re just regular although of course that kind of thin king be came null and void the moment they did rob a bank 

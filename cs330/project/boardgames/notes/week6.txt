@@ -1,0 +1,26 @@
+This week our focus was to create a basis for our games. This includes getting input from the user and 
+	having a game board displayed. Most of our time was spent learning how to even use ncurses. 
+
+
+
+Chase accomplished making a chess board (which will be used for other games in addition to chess). Instead
+	of implementing a board like we did with Othello, he created a background that looks like a chess board
+	that we can place pieces on. Changing colors presented challenges, but was eventually figured out. 
+
+
+Lily accomplished getting user input for choosing which game to play and various input types for during game 
+	play. This also included randomizing a dice roll and card draw for games such as Sorry and Aggravation. 
+
+
+There was some miscommunication as Lily thought Chase was creating boards similar to the Othello board, not a
+	background board that looks fully realistic. However, the end result does look good, it just took much 
+	longer to figure out the one single board and the other game boards were not done. 
+
+
+Next week the plan is for Chase to take some time to explain to Lily how to easily use his chess board class
+	and for Lily to explain to Chase how to use the input features. Chase will then start the process of 
+	implementing Chess and Lily will do Checkers/King's Corner/Othello. The goal is not to fully finish 
+	these games, but make significant progress. As we come across functions that seem like they can be 
+	implemented amongst several games (such as keeping track of and printing scores), we will take the 
+	time to make them their own classes. Depending on how many of these classes we end up making, this will
+	delay completion of the specific games. 

@@ -1,0 +1,15 @@
+Chase worked on creating graphics and game board logic for Sorry. However, was 
+	unsuccessful in getting functionality past that of simply displaying a 
+	board and being able to draw cards from a finite deck.
+
+Lily got all of the files working appropriately with each other for a final
+	product. She then created the actual *library* of games and updated
+	the make file. She then spent a lot of time to create the presentation.
+	She also created the readme.
+
+Issues of the week were that Chase did not pull the updated files from Lily
+	like he said he would and was editing out of date files. This made
+	Lily need to go back and fix some things. He also didn't finish
+	editing files until the day of presentations which meant everything
+	Lily needed to do had to wait until the very last minute which she
+	was unhappy about.

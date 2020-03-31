@@ -1,0 +1,93 @@
+lily@lily-E403SA:~/Documents/cs330/lab4$ ls
+num.c
+lily@lily-E403SA:~/Documents/cs330/lab4$ gcc -g -o num num.c
+lily@lily-E403SA:~/Documents/cs330/lab4$ gdb num
+GNU gdb (Ubuntu 8.1-0ubuntu3) 8.1.0.20180409-git
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from num...done.
+(gdb) run
+Starting program: /home/lily/Documents/cs330/lab4/num 
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555547c0 in main (argc=1, argv=0x7fffffffe078) at num.c:13
+13			num[i][j] = i * size + j;
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 4625] will be killed.
+
+Quit anyway? (y or n) n
+Not confirmed.
+(gdb) kill
+Kill the program being debugged? (y or n) y
+(gdb) q
+lily@lily-E403SA:~/Documents/cs330/lab4$ vim num.c
+lily@lily-E403SA:~/Documents/cs330/lab4$ gcc -g -o num num.c
+lily@lily-E403SA:~/Documents/cs330/lab4$ ./num 
+0 1 2 3 4 
+5 6 7 8 9 
+10 11 12 13 14 
+15 16 17 18 19 
+20 21 22 23 24 
+Segmentation fault (core dumped)
+lily@lily-E403SA:~/Documents/cs330/lab4$ gdb num
+GNU gdb (Ubuntu 8.1-0ubuntu3) 8.1.0.20180409-git
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from num...done.
+(gdb) run
+Starting program: /home/lily/Documents/cs330/lab4/num 
+0 1 2 3 4 
+5 6 7 8 9 
+10 11 12 13 14 
+15 16 17 18 19 
+20 21 22 23 24 
+
+Program received signal SIGSEGV, Segmentation fault.
+__GI___libc_free (mem=0x31) at malloc.c:3103
+3103	malloc.c: No such file or directory.
+(gdb) backtrace
+#0  __GI___libc_free (mem=0x31) at malloc.c:3103
+#1  0x0000555555554863 in main (argc=1, argv=0x7fffffffe078) at num.c:25
+(gdb) frame 1
+#1  0x0000555555554863 in main (argc=1, argv=0x7fffffffe078) at num.c:25
+25			free(num[i]);
+(gdb) kill
+Kill the program being debugged? (y or n) y
+(gdb) q
+lily@lily-E403SA:~/Documents/cs330/lab4$ vim num.c
+lily@lily-E403SA:~/Documents/cs330/lab4$ gcc -g -o num num.c
+lily@lily-E403SA:~/Documents/cs330/lab4$ ./num 
+0 1 2 3 4 
+5 6 7 8 9 
+10 11 12 13 14 
+15 16 17 18 19 
+20 21 22 23 24 
+lily@lily-E403SA:~/Documents/cs330/lab4$ 
+
+
+
+// NOTE: reference used - http://www.unknownroad.com/rtfm/gdbtut/gdbsegfault.html

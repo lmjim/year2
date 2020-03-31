@@ -1,0 +1,16 @@
+Due to weather, Chase did all of his week 8 work at the very end of week 7 in anticipation of not
+	being able to contribute this week. During week 7 he only needed to start chess which
+	would then be finished during week 8. Chase instead completed chess, including the
+	complicated moves, on Sunday of week 7. Chase also notified Boyana and Lily of his
+	situation on Thursday of week 8. Needless to say, Chase accomplished his week 8 goal.
+
+Lily finished checkers this week. She did find and fix some bugs in the input file, namely after
+	giving incorrect movement choices that same bad choice kept getting tested. She also ran
+	into some issues with the board, but was still able to figure it out despite not being
+	able to ask Chase (just delayed some of the work).
+
+Issues of the week: Chase not having power/cell service. However, we both finished what we
+	needed to.
+
+The plan for week 9 is for Chase to make a board for aggravation during the beginning of the
+	week and for Lily to implement (most of) the logic during the rest of the week.

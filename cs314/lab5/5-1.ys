@@ -1,0 +1,76 @@
+# Lily Jim
+# Execution begins at address 0 
+    .pos 0
+    irmovq stack, %rsp      # Set up stack pointer
+    call main               # Execute main program
+    halt                    # Terminate program 
+
+
+# Array of 10 elements
+    .align 8
+array:  
+    .quad 0x000000000007
+    .quad 0x000000000008
+    .quad 0x000000000009
+    .quad 0x000000000001
+    .quad 0x000000000005
+    .quad 0x000000000004
+    .quad 0x000000000003
+    .quad 0x00000000000b
+    .quad 0x00000000000c
+    .quad 0x00000000000a
+
+
+main:
+    irmovq array, %rdi
+    irmovq $10, %rsi
+    call sort               # sort(array, 10)
+    ret
+
+
+# void sort(long *start, long count)
+# start in %rdi, count in %rsi
+sort:
+    irmovq $8, %r13         # constant 8
+    irmovq $1, %r14         # constant 1
+    andq %rsi, %rsi         # if count != 0, flag set to not 0
+    jmp test                # jump to test
+inner:
+    addq %r13, %rbx         # temp_location set to next element
+    mrmovq (%rbx), %rax     # temp = *temp value, store value at temp_location
+    subq %rax, %r12         # min = min - temp, if min > temp, flag set to >0
+    cmovg %rbx, %rcx        # if flag >0, change min_location to temp_location
+    mrmovq (%rcx), %r12     # change min to value at min_location (either resets to min value before subq above or sets to new min value based on new min_location from temp_location)
+    subq %r14, %r11         # counter2--, if counter2 == 0, set flag to =0
+    jmp innertest           # jump to innnertest
+loop:
+    mrmovq (%rdi), %r10     # current = *start, value at current position being looked at
+    rrmovq %rdi, %rcx       # *min = *start, initially the min_location is the current_location
+    rrmovq %r10, %r12       # min = current, initially the min is the current value
+    rrmovq %rcx, %rbx       # *temp = *min, create temporary location pointer to eventually compare values
+    rrmovq %rsi, %r11       # counter2 = count, inner loop will run through remaining elements
+    subq %r14, %r11         # counter2--, if counter2 == 0, set flag to =0
+innertest:
+    jne inner               # if flag <=0, end inner loop and continue with outer
+outer:
+    call swap               # swap current and min (redundant if min is current)
+    addq %r13, %rdi         # start++, point to next element in array
+    subq %r14, %rsi         # count--, if count == 0, set flag to =0
+test:
+    jne loop                # end outer loop if flag <=0
+    ret                     # return
+
+
+# void swap(long *xp, long *yp)
+# current/xp in %rdi, min/yp in %rcx
+swap:   
+    mrmovq (%rdi), %r8      # long t0 = *xp
+    mrmovq (%rcx), %r9      # long t1 = *yp
+    rmmovq %r9, (%rdi)      # *xp = t1
+    rmmovq %r8, (%rcx)      # *yp = t0
+    ret                     # return
+
+
+# Stack starts here and grows to lower addresses
+    .pos 0x200
+stack:

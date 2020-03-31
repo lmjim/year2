@@ -1,0 +1,23 @@
+create topic 0 "ducks" 15
+create topic 1 "football" 30
+create topic 2 "trophies" 10
+create topic 3 "awards" 11
+
+query topics
+
+create publisher "ducks_publisher.txt"
+create publisher "football_publisher.txt"
+create publisher "trophies_publisher.txt"
+create publisher "awards_publisher.txt"
+
+query publishers
+
+create subscriber "ducks_subscriber.txt"
+create subscriber "football_subscriber.txt"
+create subscriber "remaining_subscriber.txt"
+
+query subscribers
+
+delta 1000
+
+start

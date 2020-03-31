@@ -1,0 +1,25 @@
+Types of proofs:
+1. Induction
+2. Contradiction
+3. Deduction
+
+recursion
+divide-and-conquer
+dynamic programming
+
+review HANOI problem and create algorithm
+	use both recursion and divide-and-conquer
+	HANOI(A,B,C,k)
+		if k=1 
+			move the top disk from A to C
+		else 
+			HANOI(A,C,B,k-1)
+			move top disk from A to C
+			HANOI(B,A,C,k-1)
+
+1. base case
+	true
+2. inductive step
+	k=2 to k=n-1
+	assume true
+3. prove k=n
